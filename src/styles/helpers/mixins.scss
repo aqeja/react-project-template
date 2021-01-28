@@ -1,0 +1,14 @@
+@import '~@mesic/style/mixin/bem.scss';
+
+@mixin max_rows($row-num) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $row-num;
+  -webkit-box-orient: vertical;
+}
+
+@mixin mini_size($size) {
+  font-size: 12px;
+  transform: scale($size / 12);
+}

@@ -1,0 +1,9 @@
+@function r($size) {
+  $r: $size / 20;
+  @return #{$size}px;
+}
+
+/** color with opacity */
+@function oc($color, $opacity: 1) {
+  @return rgba(var(--#{$color}), $opacity);
+}
